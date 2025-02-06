@@ -16,54 +16,63 @@ body {
     font-weight: 300;
 }
 
-hgroup {
+
+
+
+.sensitive-container {
+    font-size:100%;
+    font-family: pt-sans, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.sensitive-hgroup {
     display: grid;
     grid-template-rows: 18% 57% 20% 5%;
     gap:0em;
 }
 
-h1 { 
+.sensitive-h1 { 
     font-size:5.25em;
     font-family:abhaya-libre, serif;
     font-weight:700;
     letter-spacing: 1px;
 }
 
-h2 {
+.sensitive-h2 {
     color:#3f8c9d;
     font-size:1.5em;
     letter-spacing: 1px;
 }
 
-h3 {
+.sensitive-h3 {
     color: #b27772;
     font-size:1.8em;
     letter-spacing: 1px;
     
 }
 
-h4 {
+.sensitive-h4 {
     font-weight: 700;
     font-size: 1.25em;
 }
 
-.date {
+.sensitive-date {
     display: block;
     font-weight:inherit;
     line-height: 1.5;;
 }
 
-p {
+.sensitive-p {
     font-size: 1.33em;
     line-height: 1.25;;
 }
 
-img {
+.sensitive-banner-img {
     width: 100%;
 }
 
 
-.banner-text {
+.sensitive-banner-text {
     display: grid;
     gap:1em;
     margin:2em 0em 2em 2em;
@@ -72,12 +81,12 @@ img {
    
 }
 
-.banner-image {
+.sensitive-banner-image {
     grid-area: bannerimage;
 }
 
 
-.cta:link, .cta:visited, .cta:active, .cta:focus {
+.sensitive-cta:link, .sensitive-cta:visited, .sensitive-cta:active, .sensitive-cta:focus {
     width:60%;
     max-width:220px;
     display: grid;
@@ -94,7 +103,7 @@ img {
     transition: background-color 500ms;
 }
 
-.cta:hover {
+.sensitive-cta:hover {
     transition: background-color 500ms;
     background-color: #95d7d4;
     color:white;
@@ -102,17 +111,17 @@ img {
 
 
 @media screen and (min-width:550px) {
-    .banner-image {
+    .sensitive-banner-image {
         padding-left:1em;
     }
 
-    .banner-text {
+    .sensitive-banner-text {
         padding-left:8em;
     }
 }
 
 @media screen and (min-width:720px) {
-    img {
+    .sensitive-banner-img {
         width:90%;
     }
      
@@ -120,26 +129,19 @@ img {
 
 @media screen and (min-width:800px) {
 
-    hgroup {
+    .sensitive-hgroup {
         display: grid;
         grid-template-rows: 18% 50% 20% 12%;
         gap:0em;
         max-height: 159px;
     }
 
-    img {
+    .sensitive-banner-img {
         width:100%;
     }
 
-    .banner-text {
-        padding-left:0em;
-    }
-
-    article {
+    .sensitive-banner {
         padding-right:2em;
-    }
-
-    .banner {
         display: grid;
         grid-template-columns: 45% 55%;
         grid-template-areas: 'bannertext bannerimage';
@@ -148,18 +150,19 @@ img {
 
     }
 
-    .banner-text {
+    .sensitive-banner-text {
         margin:4em 0em 3em 3em;  
         max-height: 400px;
         gap:0em;
+        padding-left:0em;
     }
 
-    .banner-image {
+    .sensitive-banner-image {
         padding-top:2em;
         padding-left: 1em;  
     }
 
-    .cta:link, .cta:active, .cta:focus {
+    .sensitive-cta:link, .sensitive-cta:active, .sensitive-cta:focus {
        
         padding:.5em;
     }
@@ -168,7 +171,7 @@ img {
 
 
 @media screen and (min-width:860px) {
-    .banner {
+    .sensitive-banner {
         padding-inline:2em;
     }
 }
@@ -179,7 +182,7 @@ img {
 @media screen and (min-width:1024px) {
 
 
-    .banner {
+    .sensitive-banner {
 
         padding-inline:8%;
       
@@ -187,7 +190,7 @@ img {
     
     }
 
-    .banner-enclosure {
+    .sensitive-container {
         display: grid;
         align-content: center;
     }
@@ -196,13 +199,13 @@ img {
 
 
 @media screen and (min-width:1100px) {
-.date {
+.sensitive-date {
     display: inline;
 
 }
 
 
-.banner {
+.sensitive-banner {
     grid-template-columns: 45% 55%;
     gap:0;
     padding-inline:6em;
@@ -214,18 +217,18 @@ img {
 
 @media screen and (min-width:1500px) {
     
-    .banner {
+    .sensitive-banner {
         grid-template-columns: 45% 55%;
         gap:0;
         padding-inline:12em;
         overflow: hidden;
     }
 
-    .banner-image {
+    .sensitive-banner-image {
         padding-top:.5em;
     }
     
-    .banner-text {
+    .sensitive-banner-text {
         padding-top:.5em;
     }
     
