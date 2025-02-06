@@ -26,6 +26,7 @@ h1 {
     font-size:5.25em;
     font-family:abhaya-libre, serif;
     font-weight:700;
+    letter-spacing: 1px;
 }
 
 h2 {
@@ -59,14 +60,20 @@ img {
 .banner-text {
     display: grid;
     gap:1em;
-    margin:2em;
+    margin:2em 0em 2em 2em;
+    grid-area: bannertext;
+
    
+}
+
+.banner-image {
+    grid-area: bannerimage;
 }
 
 
 .cta:link, .cta:active, .cta:focus {
     width:60%;
-    max-width:200px;
+    max-width:220px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -84,4 +91,106 @@ img {
 .cta:hover {
     transition: background-color 500ms;
     background-color: #95d7d4;
+}
+
+
+@media screen and (min-width:475px) {
+     
+}
+
+
+@media screen and (min-width:550px) {
+    .banner-image {
+        padding-left:1em;
+    }
+
+    .banner-text {
+        padding-left:8em;
+    }
+}
+
+@media screen and (min-width:720px) {
+    img {
+        width:90%;
+    }
+     
+}
+
+@media screen and (min-width:800px) {
+
+    hgroup {
+        display: grid;
+        grid-template-rows: 18% 50% 20% 12%;
+        gap:0em;
+        max-height: 159px;
+    }
+
+    img {
+        width:100%;
+    }
+
+    .banner-text {
+        padding-left:0em;
+    }
+
+    article {
+        padding-right:2em;
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 'bannertext bannerimage';
+        max-height: 580px;
+        gap:0;
+
+    }
+
+    .banner-text {
+        margin:4em 0em 3em 4em;  
+        max-height: 400px;
+        gap:0em;
+    }
+
+    .banner-image {
+        padding-top:2em;
+        padding-left: 1em;  
+    }
+
+    .cta:link, .cta:active, .cta:focus {
+       
+        padding:.5em;
+    }
+
+     
+}
+
+
+@media screen and (min-width:1500px) {
+
+    .banner-enclosure {
+        display: grid;
+        align-content: center;
+    }
+
+    .banner {
+        grid-template-columns: 45% 55%;
+        gap:0;
+        padding-inline:12em;
+        overflow: hidden;
+        max-width:1500px;
+
+
+    }
+
+    .banner-image {
+        padding-top:.5em;
+    }
+    
+    .banner-text {
+        padding-top:.5em;
+    }
+    
+ 
+
 }
