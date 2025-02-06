@@ -50,7 +50,7 @@ h4 {
 .date {
     display: block;
     font-weight:inherit;
-    line-height: 1.25;;
+    line-height: 1.5;;
 }
 
 p {
@@ -77,7 +77,7 @@ img {
 }
 
 
-.cta:link, .cta:active, .cta:focus {
+.cta:link, .cta:visited, .cta:active, .cta:focus {
     width:60%;
     max-width:220px;
     display: grid;
@@ -97,11 +97,7 @@ img {
 .cta:hover {
     transition: background-color 500ms;
     background-color: #95d7d4;
-}
-
-
-@media screen and (min-width:475px) {
-     
+    color:white;
 }
 
 
@@ -124,8 +120,6 @@ img {
 
 @media screen and (min-width:800px) {
 
-   
-
     hgroup {
         display: grid;
         grid-template-rows: 18% 50% 20% 12%;
@@ -147,15 +141,15 @@ img {
 
     .banner {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 45% 55%;
         grid-template-areas: 'bannertext bannerimage';
         max-height: 580px;
-        gap:0;
+        gap:1em;
 
     }
 
     .banner-text {
-        margin:4em 0em 3em 4em;  
+        margin:4em 0em 3em 3em;  
         max-height: 400px;
         gap:0em;
     }
@@ -169,33 +163,62 @@ img {
        
         padding:.5em;
     }
-
-     
+   
 }
+
+
+@media screen and (min-width:860px) {
+    .banner {
+        padding-inline:2em;
+    }
+}
+
+
+
 
 @media screen and (min-width:1024px) {
-.date {
-    display: inline;
-
-}
-}
 
 
-@media screen and (min-width:1500px) {
+    .banner {
+
+        padding-inline:8%;
+      
+    
+    
+    }
 
     .banner-enclosure {
         display: grid;
         align-content: center;
     }
 
+}
+
+
+@media screen and (min-width:1100px) {
+.date {
+    display: inline;
+
+}
+
+
+.banner {
+    grid-template-columns: 45% 55%;
+    gap:0;
+    padding-inline:6em;
+    max-width:1100px;
+}
+
+}
+
+
+@media screen and (min-width:1500px) {
+    
     .banner {
         grid-template-columns: 45% 55%;
         gap:0;
         padding-inline:12em;
         overflow: hidden;
-        max-width:1500px;
-
-
     }
 
     .banner-image {
